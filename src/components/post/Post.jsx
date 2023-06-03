@@ -7,7 +7,7 @@ const Post = () => {
     <div className='post'>
         <div className="postWrapper">
             <div className="postTop">
-                <div className="postLeft">
+                <div className="postTopLeft">
                     <img src="/assets/person/1.jpeg" alt="" className="postProfileImg" />
                     <span className="postUsername">Prince Stiles</span>
                     <span className="postDate">5h ago</span>
