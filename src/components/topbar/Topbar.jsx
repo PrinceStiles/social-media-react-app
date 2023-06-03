@@ -17,7 +17,7 @@ const Topbar = () => {
         <div className="topbarRight">
             <div className="topbarLinks">
                 <span className="topbarLink">Home</span>    
-                <span className="topbarLink">Home</span> 
+                <span className="topbarLink">Timeline</span> 
             </div>
             <div className="topbarIcon">
                 <div className="topbarIconItem">
