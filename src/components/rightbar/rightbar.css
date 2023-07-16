@@ -1,9 +1,12 @@
 .rightbar {
     flex: 3.5;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px 0 #76767663;
+    background-color: #fff;
 }
 
 .rightbarWrapper {
-    padding: 20px 20px 0 0;
+    padding: 20px;
 }
 
 .birthdayContainer{
@@ -12,8 +15,12 @@
 }
 
 .birthdayImg {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    background: #FFA8D2;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px 0 #76767663;
     margin-right: 10px;
 }
 
@@ -30,6 +37,20 @@
 
 .rightbarTitle {
     margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #1877f2;
+}
+
+.rightbarTitle .icon {
+    font-size: 30px;
+    color: #fff;
+    padding: 10px;
+    background: #FFA8D2;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px 0 #76767663;
+    margin-right: 10px;
 }
 
 .rightbarFriendList {
@@ -41,10 +62,25 @@
 .rightbarFriend {
     display: flex;
     align-items: center;
-    margin-bottom: 15px;
+    width: 100%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    background: #f1f3f5;
+    padding: 10px 5px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px 0 #76767663;
+    position: relative;
+    transition: .4s;
+}
+
+.rightbarFriend:hover {
+    box-shadow: 0 4px 6px 0 #76767663;
 }
 
 .rightbarProfileImgContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     margin-right: 10px;
     position: relative;
 }

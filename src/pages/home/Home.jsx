@@ -7,7 +7,7 @@ import Feed from '../../components/feed/Feed'
 
 const Home = () => {
   return (
-    <div>
+    <div className='home'>
       <Topbar />
       <div className="homeContainer">
         <Sidebar />

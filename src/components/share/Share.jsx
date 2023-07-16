@@ -1,4 +1,4 @@
-import { EmojiEmotions, Label, PermMedia, Room } from '@mui/icons-material'
+import { EmojiEmotions, Style, Collections, Room } from '@mui/icons-material'
 import React from 'react'
 import './share.css'
 
@@ -7,18 +7,17 @@ const Share = () => {
     <div className='share'>
         <div className="shareWrapper">
             <div className="shareTop">
-                <img src="/assets/person/1.jpeg" alt="" className="shareProfileImg" />
+                <img src="/assets/person/1.jpg" alt="" className="shareProfileImg" />
                 <input placeholder="What's on your mind Prince?" className="shareInput" />
             </div>
-            <hr className="shareHr" />
             <div className="shareBottom">
                 <div className="shareOptions">
                     <div className="shareOption">
-                        <PermMedia htmlColor='tomato' className='shareIcon' />
+                        <Collections htmlColor='tomato' className='shareIcon' />
                         <span className="shareOptionText">Photo or Video</span>
                     </div>
                     <div className="shareOption">
-                        <Label htmlColor='blue' className='shareIcon' />
+                        <Style htmlColor='blue' className='shareIcon' />
                         <span className="shareOptionText">Tag</span>
                     </div>
                     <div className="shareOption">

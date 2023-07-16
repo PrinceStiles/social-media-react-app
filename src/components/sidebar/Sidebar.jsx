@@ -1,5 +1,6 @@
 import { Bookmark, Chat, Event, Group, HelpOutline, PlayCircleFilledOutlined, RssFeed, School, WorkOutline } from '@mui/icons-material'
 import React from 'react'
+import { Users } from '../../dummydata'
 import './sidebar.css'
 
 const Sidebar = () => {
@@ -7,6 +8,7 @@ const Sidebar = () => {
     <div className='sidebar'>
         <div className="sidebarWrapper">
             <ul className="sidebarList">
+                <li className='head'><h4>Explore</h4></li>
                 <li className="sidebarListItem">
                     <RssFeed className='sidebarIcon'/>
                     <span className="sidebarListItemText">Feed</span>
@@ -44,49 +46,17 @@ const Sidebar = () => {
                     <span className="sidebarListItemText">Courses</span>
                 </li>
             </ul>
-            <button className="sidebarButton">Show More</button>
-            <hr className="sidebarHr" />
+            <div className="sidebarButton">
+                <button>Show More</button>
+            </div>
             <ul className="sidebarFriendList">
-                <li className="sidebarFriend">
-                    <img src="/assets/person/2.jpeg" alt="" className="sidebarFriendImg" />
-                    <span className="sidebarFriendName">Prince Stiles</span>
+                <li className='head'><h4>Friends</h4></li>
+                {Users.map((u) => (
+                <li className="sidebarFriend" key={u.id} user={u}>
+                    <img src={u.profilePicture} alt="" className="sidebarFriendImg" />
+                    <span className="sidebarFriendName">{u.username}</span>
                 </li>
-                <li className="sidebarFriend">
-                    <img src="/assets/person/2.jpeg" alt="" className="sidebarFriendImg" />
-                    <span className="sidebarFriendName">Prince Stiles</span>
-                </li>
-                <li className="sidebarFriend">
-                    <img src="/assets/person/2.jpeg" alt="" className="sidebarFriendImg" />
-                    <span className="sidebarFriendName">Prince Stiles</span>
-                </li>
-                <li className="sidebarFriend">
-                    <img src="/assets/person/2.jpeg" alt="" className="sidebarFriendImg" />
-                    <span className="sidebarFriendName">Prince Stiles</span>
-                </li>
-                <li className="sidebarFriend">
-                    <img src="/assets/person/2.jpeg" alt="" className="sidebarFriendImg" />
-                    <span className="sidebarFriendName">Prince Stiles</span>
-                </li>
-                <li className="sidebarFriend">
-                    <img src="/assets/person/2.jpeg" alt="" className="sidebarFriendImg" />
-                    <span className="sidebarFriendName">Prince Stiles</span>
-                </li>
-                <li className="sidebarFriend">
-                    <img src="/assets/person/2.jpeg" alt="" className="sidebarFriendImg" />
-                    <span className="sidebarFriendName">Prince Stiles</span>
-                </li>
-                <li className="sidebarFriend">
-                    <img src="/assets/person/2.jpeg" alt="" className="sidebarFriendImg" />
-                    <span className="sidebarFriendName">Prince Stiles</span>
-                </li>
-                <li className="sidebarFriend">
-                    <img src="/assets/person/2.jpeg" alt="" className="sidebarFriendImg" />
-                    <span className="sidebarFriendName">Prince Stiles</span>
-                </li>
-                <li className="sidebarFriend">
-                    <img src="/assets/person/2.jpeg" alt="" className="sidebarFriendImg" />
-                    <span className="sidebarFriendName">Prince Stiles</span>
-                </li>
+                ))}
             </ul>
         </div>
     </div>
